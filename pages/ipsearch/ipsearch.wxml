@@ -1,0 +1,17 @@
+<view class="contaier">
+  <view class='search_body'>
+    <input type="digit" placeholder-class="placeholder" maxlength='15' class='search' placeholder='请输入IP地址' bindinput="bindKeyInput"></input>
+    <button class='searchBtn' bindtap='search'>查询</button>
+  </view>
+
+  <view class='result'>
+    <block wx:if="{{result.ip}}">
+      <view class='search_result'>IP：{{result.ip}}</view>
+
+      <view class='search_result'>位置：{{result.ad_info.nation}}{{result.ad_info.province}}{{result.ad_info.city}}{{result.ad_info.district}}</view>
+      <view class='search_result'>经度：{{result.location.lng}}{{result.city}}</view>
+      <view class='search_result'>纬度：{{result.location.lat}}</view>
+
+    </block>
+  </view>
+</view>

@@ -1,0 +1,16 @@
+<view class="contaier">
+
+  <view class='search_body'>
+    <input type="number" placeholder-class="placeholder" maxlength='11' class='search' placeholder='请输入手机号' bindinput="bindKeyInput"></input>
+    <button class='searchBtn' bindtap='search'>查询</button>
+  </view>
+
+  <view class='result'>
+    <block wx:if="{{result.OriginQuery}}">
+      <view class='search_result'>手机号：{{result.OriginQuery}}</view>
+      <view class='search_result'>归属地：{{result.prov}}{{result.city}}</view>
+      <view class='search_result'>运营商：{{result.type}}</view>
+
+    </block>
+  </view>
+</view>

@@ -1,0 +1,39 @@
+.search_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40rpx;
+}
+
+.search {
+  width: 380rpx;
+  height: 80rpx;
+  padding: 0 20rpx;
+  border: 2rpx solid #fcd478;
+  outline: none;
+  border-radius: 10rpx;
+}
+
+.searchBtn {
+  font-size: 34rpx;
+  width: 200rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background: #fcd478;
+  color: #fff;
+}
+
+.placeholder {
+  font-size: 34rpx;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  margin: 40rpx;
+}
+
+.search_result {
+  margin: 10rpx 0;
+}

@@ -1,0 +1,14 @@
+<view class='container'>
+  <text class='header_title'>实用工具合集</text>
+
+  <view class='tool_body'>
+    <block wx:for="{{toolList}}" wx:key="{{item.id}}">
+      <view class='item_child' data-id="{{item.id}}" bindtap='goDetail'>
+        <image class='item_img' src="{{item.imgUrl}}"></image>
+        <text class='item_title'>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+
+
+</view>
