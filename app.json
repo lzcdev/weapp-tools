@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/ipsearch/ipsearch",
-    "pages/phoneaddress/phoneaddress"
+    "pages/phoneaddress/phoneaddress",
+    "pages/zhihu/zhihu",
+    "pages/article/article"
   ],
   "window": {
     "backgroundTextStyle": "light",

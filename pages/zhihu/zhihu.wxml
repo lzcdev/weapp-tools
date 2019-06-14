@@ -1,0 +1,12 @@
+<view class='container'>
+  <view class='header_title'>知乎日报</view>
+
+  <view class='new_msg'>
+    <block wx:for="{{stories}}" wx:key="{{item.id}}">
+      <view class='content' bindtap='goDetail' data-story="{{item}}">
+        <image class="img" src="{{item.images ? item.images : item.image}}"></image>
+        <text class='title'>{{item.title}}</text>
+      </view>
+    </block>
+  </view>
+</view>

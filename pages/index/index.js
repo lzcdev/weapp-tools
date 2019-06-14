@@ -9,6 +9,10 @@ Page({
       id: 1,
       title: 'IP地址',
       imgUrl: '../../images/ip.png'
+    }, {
+      id: 2,
+      title: '知乎日报',
+      imgUrl: '../../images/zhihu.png'
     }]
   },
   onLoad: function() {
@@ -28,6 +32,9 @@ Page({
         })
         break;
       case 2:
+        wx.navigateTo({
+          url: '../zhihu/zhihu',
+        })
         break;
       default:
         break

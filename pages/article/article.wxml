@@ -1,0 +1,4 @@
+<view class='container'>
+  <view>个人账号暂不支持webview</view>
+  <view>{{share_url}}</view>
+</view>
